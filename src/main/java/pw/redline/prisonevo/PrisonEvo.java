@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import pw.redline.prisonevo.dto.UserManager;
+import pw.redline.prisonevo.listeners.BlockListener;
 import pw.redline.prisonevo.listeners.JoinListener;
 
 public class PrisonEvo extends JavaPlugin {
@@ -15,6 +16,7 @@ public class PrisonEvo extends JavaPlugin {
         userManager = new UserManager();
 
         regListener(new JoinListener(this));
+        regListener(new BlockListener(getUserManager()));
     }
 
     public UserManager getUserManager() {

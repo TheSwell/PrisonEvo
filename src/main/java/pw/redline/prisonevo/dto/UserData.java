@@ -1,16 +1,23 @@
 package pw.redline.prisonevo.dto;
+
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashMap;
+
 public class UserData {
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private int level;
 
-    @Getter @Setter
+
+    @Getter
+    @Setter
     private int blockCount;
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private int clearBlockCount;
 
     public UserData(int level, int blockCount, int clearBlockCount) {
@@ -18,8 +25,6 @@ public class UserData {
         this.blockCount = blockCount;
         this.clearBlockCount = clearBlockCount;
     }
-
-
 
 
 }
