@@ -12,6 +12,6 @@ public class UserManager {
     }
 
     public void createUserData(String name) {
-        userMap.put(name, new UserData(0,0,0));
+        setUserMap(name, new UserData(1,0,0));
     }
 }
