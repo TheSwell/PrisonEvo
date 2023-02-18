@@ -7,10 +7,10 @@ import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
 import pw.redline.prisonevo.PrisonEvo;
 import pw.redline.prisonevo.dto.UserManager;
 
-public class JoinListener implements Listener {
+public class ConnectionListener implements Listener {
     private final PrisonEvo evo;
 
-    public JoinListener(PrisonEvo evo) {
+    public ConnectionListener(PrisonEvo evo) {
         this.evo = evo;
     }
 
